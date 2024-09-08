@@ -1,0 +1,212 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;   
+    position: sticky;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    height: 95px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+/* Navigation bar: logo */
+#logo img{
+    height: 54px;
+    margin: 3px 20px;
+    padding: 3px;
+}
+#logo p{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: -4px 44px;
+    font-size:0.98rem;
+    color: white;
+}
+/* Navigation bar: listing */
+#navbar ul{
+    display: flex;
+  
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 3px 20px;   
+    border-radius: 50px;
+}
+#navbar ul li a:hover{
+    background-color: brown;
+    cursor: pointer;  
+}
+/* Home Section */
+#home-container{
+ display: flex;   
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ color: white;
+ height: 580px;
+}
+#home-container::before{
+    content: "";
+    background:url('../bg1.png') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.2;
+ }
+ #home-container h1{
+    text-shadow: -2px -2px 6px black;
+    }
+#home-container p{
+ font-size: 1.3rem;
+ padding: 2px 254px;
+ text-shadow: -2px -2px 6px black;
+ }
+  /* service section */
+  #service-container{
+    height: 582px;
+  }
+  #services{
+    display: flex;
+    margin: 34px;
+  }
+  #services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 3px;
+    background: rgb(247, 225, 225);
+    border-radius: 28px;
+  }
+  #services .box img{
+    height: 210px;
+    display: block;
+    margin: auto;
+    padding: 2px 20px;
+  }
+ /* Client-section */
+ #clients{
+    display: flex;
+    margin: 34px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 525px;
+ }
+ #clients::before{
+    content: "";
+    background:url('../img/clbg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+ }
+ #clients img{
+    height: 252px;
+    padding: 2px;
+    margin: 8px;
+ }
+ /* Contact us  */
+ #contact-container{
+    margin: 34px;
+ }
+ #contact-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 34px;
+    margin: auto;
+    position: relative;
+ }
+ #contact-section::before{
+    content: "";
+    background:url('../img/contact-us.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+ }
+ #contact-section form {
+    width: 40%;
+    font-size: 1.1rem;
+}
+#contact-section label{
+    font-size: 1.1rem; 
+    font-family: "Bree Serif", serif;
+}
+ #contact-section input, textarea{
+    width: 100%;
+    padding: 0.5rem;
+ }
+
+/* Utility Classes */
+.h-primary{
+    /* font-size: 1.7rem;
+    margin: 7px; */
+    /* border-bottom: 2px solid red; */
+    font-size: 3.5rem;
+    margin: 3px;
+    padding: 10px;
+    font-family: "Bree Serif", serif;
+}
+.h-secondary{
+    font-size: 2.2rem;
+    margin: 7px;
+    font-family: "Questrial", sans-serif;
+}
+.center{
+    text-align: center;
+}
+.para-class{
+    text-align: justify;
+}
+footer{
+    font-size: 0.9rem;
+    color: white;
+    background-color: black;
+    margin: 15px;
+    padding: 0.5rem;
+}
+/* Button class */
+.btn{
+    margin: 12px;
+    font-size: 1.2rem;
+    padding: 3px 7px;
+    background: #1d8ced;
+    border-radius: 12px;
+    border: 2px solid white;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+.btn:hover{
+    background: green;
+    border: 2px solid black;
+    color: white;
+}
+.line{
+    border-bottom: 2px solid red;
+    margin-top: 0px;
+    width: 32%;
+}
